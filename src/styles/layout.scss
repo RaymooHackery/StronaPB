@@ -1,9 +1,10 @@
 .row {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .column {
-  flex-basis: 50%;
+  &--grow {
+    flex-grow: 1;
+  }
 }
