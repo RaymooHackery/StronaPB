@@ -1,0 +1,13 @@
+@import "../../styles/colors";
+
+.contact {
+  width: 100%;
+  height: 3em;
+  background: $bone;
+  display: flex;
+  justify-content: flex-end;
+
+  &__text {
+    margin-right: 1em;
+  }
+}
