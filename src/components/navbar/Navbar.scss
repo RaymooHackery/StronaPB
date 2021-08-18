@@ -5,7 +5,8 @@
   height: 5em;
   background: $grey;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
+  justify-content: flex-end;
 
   &__item {
     margin-top: 1em;
@@ -15,5 +16,14 @@
   &__item-text {
     font-size: 2em;
     color: $white;
+
+    &:hover {
+      transition: color 0.25s;
+      color: $yellow;
+    }
+    // wystyluj
+    &--active {
+      color: red;
+    }
   }
 }

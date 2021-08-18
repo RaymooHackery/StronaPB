@@ -5,7 +5,7 @@ const Contact = () => {
     return(
     <div className="contact">        
         <p className="contact__text">Email</p>
-        <p className="contact__text">Numer</p>
+        <p className="contact__text">668 667 370</p>
     </div>
     )
 }
