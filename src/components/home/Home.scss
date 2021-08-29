@@ -1,0 +1,33 @@
+@import "../../styles/colors";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column wrap;
+  margin-right: 10%;
+  margin-left: 60%;
+}
+
+.header__txt {
+  min-height: 500px;
+  justify-items: center;
+  text-align: center;
+  font-size: 2em;
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.384);
+}
+
+button {
+  background-color: $yellow;
+  color: $grey;
+  align-content: flex-end;
+}
+
+.slider {
+  min-height: 500px;
+  // background: url("./../../img/kot.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

@@ -1,0 +1,42 @@
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin: 0 12rem;
+}
+
+.description-img {
+  width: 80%;
+  padding-top: 2em;
+}
+
+.description-main {
+  padding-top: 7em;
+  text-align: flex;
+  align-self: left;
+  justify-self: left;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.description-text {
+  opacity: 1;
+  text-align: flex;
+  align-self: left;
+  justify-self: left;
+  width: 70%;
+  font-size: 2rem;
+}
+
+.description-sub {
+  display: inline-block;
+  margin-left: 40%;
+  margin-right: 30%;
+  font-size: 3em;
+  text-align: flex;
+  justify-self: center;
+}
+
+.description-list {
+  text-align: left;
+}

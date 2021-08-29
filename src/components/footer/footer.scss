@@ -1,0 +1,35 @@
+@import "../../styles/colors";
+
+.footer {
+  position: absolute bottom;
+  padding: 1em;
+  background-color: $grey;
+  border-style: solid;
+  border-color: $black;
+  border-width: 8px;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.footer-it {
+  font-size: 1.3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.footer-link {
+  color: $yellow;
+  text-decoration: none;
+}
+
+.footer-copyr {
+  text-align: center;
+  color: $yellow;
+  font-size: 1.1rem;
+  text-decoration: none;
+}

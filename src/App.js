@@ -5,6 +5,7 @@ import Routes from "./components/Routes";
 import "./styles/layout.scss";
 import "./styles/reset.scss";
 import Topbar from "./components/topbar/topbar";
+import Footer from "./components/footer/footer";
 
 
 export default function App() {
@@ -13,6 +14,9 @@ export default function App() {
       <Topbar />
       <div className="column">
         <Routes />
+      </div>
+      <div>
+        <Footer />
       </div>  
     </Router >
   );

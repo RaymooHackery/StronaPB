@@ -1,5 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import Adress from "./adress/adress";
+import Home from "./home/Home";
+import Services from "./services/services";
 
 const Routes = () => {
     return (
@@ -11,7 +14,7 @@ const Routes = () => {
                 <Gallery />
             </Route>
             <Route path="/contact">
-                <Contact />
+                <Adress />
             </Route>
             <Route path="/">
                 <Home />
@@ -19,20 +22,8 @@ const Routes = () => {
         </Switch>
     )
 };
-function Home() {
-    return <h2>Home</h2>;
-}
-
-function Services() {
-    return <h2>Services</h2>;
-}
-
 function Gallery() {
     return <h2>Gallery</h2>;
-}
-
-function Contact() {
-    return <h2>Contact</h2>
 }
 
 export default Routes;

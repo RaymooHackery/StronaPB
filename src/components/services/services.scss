@@ -1,0 +1,15 @@
+@import "../../styles/colors";
+
+h2 {
+  background-color: $yellow;
+}
+
+.services {
+  display: flex;
+  align-self: auto;
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+.services__row {
+}

@@ -5,10 +5,10 @@ import NavbarItem from "./NavbarItem";
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <NavbarItem pathTo="/">Home</NavbarItem>
-            <NavbarItem pathTo="/services" > Services</NavbarItem >
-            <NavbarItem pathTo="/gallery" > Gallery</NavbarItem >
-            <NavbarItem pathTo="/contact" > Contact</NavbarItem >
+            <NavbarItem pathTo="/"> O nas</NavbarItem>
+            <NavbarItem pathTo="/services" > Usługi</NavbarItem >
+            <NavbarItem pathTo="/gallery" > Galeria</NavbarItem >
+            <NavbarItem pathTo="/contact" > Kontakt</NavbarItem >
         </nav >)
 }
 
