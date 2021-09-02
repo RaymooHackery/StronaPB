@@ -13,25 +13,25 @@ const image1 = {
 }
 
 const image2 = {
-    path: "./../../img/kot.jpg",
+    path: "kot2.jpg",
     alt: "clean1",
     order: 2
 }
 
 const image3 = {
-    path: "./../../img/kot.jpg",
+    path: "kot3.jpg",
     alt: "mess2",
     order: 3
 }
 
 const image4 = {
-    path: "./../../img/kot.jpg",
+    path: "kot4.jpg",
     alt: "clean2",
     order: 4
 }
 
 const image5 = {
-    path: "./../../img/kot.jpg",
+    path: "kot2.jpg",
     alt: "clean3",
     order: 5
 }

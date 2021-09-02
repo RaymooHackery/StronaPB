@@ -1,5 +1,28 @@
-// import React, { useMemo, useState } from "react";
-// import "./carousel.scss"
-// import Images from "./carouselImages";
+import React, { useState } from "react";
+import "./carousel.scss"
 
-// export default Carousel;
+const Carousel = ({images}) => {
+    const [activeImage, setActiveImage] = useState(0);
+    const handleNextSlide = () => {
+        if (activeImage + 1 >= images.length) {
+            setActiveImage(0)
+        } else 
+        setActiveImage(activeImage + 1);
+    };
+    const handlePreviousSlide = () => {
+        if (activeImage === 0) {
+            setActiveImage(images.length - 1)
+        } else 
+        setActiveImage(activeImage - 1);
+    };
+
+    return (
+        <div>
+            <button onClick={handlePreviousSlide}>-</button>
+            <img src={images[activeImage].path} alt="helo" />
+            <button onClick={handleNextSlide}>+</button>
+        </div>
+    )
+};
+
+export default Carousel;
