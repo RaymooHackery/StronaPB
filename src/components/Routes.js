@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Adress from "./adress/adress";
+import Address from "./address/Address";
 import Home from "./home/Home";
 import Services from "./services/services";
 
@@ -14,7 +14,7 @@ const Routes = () => {
                 <Gallery />
             </Route>
             <Route path="/contact">
-                <Adress />
+                <Address />
             </Route>
             <Route path="/">
                 <Home />

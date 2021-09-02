@@ -5,7 +5,7 @@ import Routes from "./components/Routes";
 import "./styles/layout.scss";
 import "./styles/reset.scss";
 import Topbar from "./components/topbar/topbar";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer";
 
 
 export default function App() {

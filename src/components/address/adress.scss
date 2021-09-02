@@ -1,16 +1,16 @@
-.adress {
+.address {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   margin: 0 12rem;
 }
 
-.adress__img {
+.address__img {
   width: 80%;
   padding-top: 2em;
 }
 
-.adress__main {
+.address__main {
   padding-top: 7em;
   text-align: flex;
   align-self: left;
@@ -19,7 +19,7 @@
   font-size: 2rem;
 }
 
-.adress__name {
+.address__name {
   opacity: 1;
   text-align: flex;
   align-self: center;

@@ -7,7 +7,7 @@
 // }
 
 const image1 = {
-    path: "./../../img/kot.jpg",
+    path: "kot.jpg",
     alt: "mess1",
     order: 1
 }
