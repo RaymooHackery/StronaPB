@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./carousel.scss"
 
 const Carousel = ({images}) => {
     const [activeImage, setActiveImage] = useState(0);
+    useEffect(() => {
+        setTimeout( 
+                () => setActiveImage((prevImage) =>
+                    prevImage === images.length - 1 ? 0 : prevImage + 1
+                ), 10000
+            );
+        return () => {}
+    }, [activeImage]);
     const handleNextSlide = () => {
         if (activeImage + 1 >= images.length) {
             setActiveImage(0)
@@ -17,7 +25,7 @@ const Carousel = ({images}) => {
     };
 
     return (
-        <div>
+        <div className="slides">
             <button onClick={handlePreviousSlide}>-</button>
             <img src={images[activeImage].path} alt="helo" />
             <button onClick={handleNextSlide}>+</button>
