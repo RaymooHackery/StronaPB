@@ -27,7 +27,7 @@ const Carousel = ({images}) => {
     return (
         <div className="slides">
             <button onClick={handlePreviousSlide}>-</button>
-            <img src={images[activeImage].path} alt="helo" />
+            <img src={images[activeImage].path} alt="helo" className="slide"/>
             <button onClick={handleNextSlide}>+</button>
         </div>
     )

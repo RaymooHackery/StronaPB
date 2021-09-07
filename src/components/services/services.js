@@ -4,6 +4,9 @@ import "./services.scss"
 const Services = () => {
     return (
         <div>
+            <div className="services__note">
+                <h1>Wszelkie ceny naszych usług do ustalenia z klientem</h1>
+            </div>
             <div className="services">
             <ul><h2>Usługi malarskie</h2>
                 <li>Gruntowanie</li>

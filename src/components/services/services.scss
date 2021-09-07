@@ -4,12 +4,15 @@ h2 {
   background-color: $yellow;
 }
 
+.services__note {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 .services {
   display: flex;
   align-self: auto;
   font-size: 1.5em;
   padding: 20px;
-}
-
-.services__row {
 }
