@@ -1,11 +1,22 @@
+@import "../../styles/colors";
+
 .gallery {
   object-fit: cover;
-  width: 100%;
+  width: 80%;
   max-height: 100%;
   display: grid;
-  gap: 12px;
+  column-gap: 12px;
+  margin-left: 10%;
+  margin-top: 30px;
 }
 
 .gallery__row {
-  padding: 12px;
+  cursor: pointer;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+
+.gallery__text {
+  background-color: $yellow;
 }
