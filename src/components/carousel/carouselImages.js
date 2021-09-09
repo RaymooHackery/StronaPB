@@ -7,31 +7,31 @@
 // }
 
 const image1 = {
-    path: "kot.jpg",
+    path: "./carousel/003.jpg",
     alt: "mess1",
     order: 1
 }
 
 const image2 = {
-    path: "kot2.jpg",
+    path: "/carousel/006.jpg",
     alt: "clean1",
     order: 2
 }
 
 const image3 = {
-    path: "kot3.jpg",
+    path: "/carousel/007.jpg",
     alt: "mess2",
     order: 3
 }
 
 const image4 = {
-    path: "kot4.jpg",
+    path: "./carousel/003.jpg",
     alt: "clean2",
     order: 4
 }
 
 const image5 = {
-    path: "kot2.jpg",
+    path: "/carousel/007.jpg",
     alt: "clean3",
     order: 5
 }
