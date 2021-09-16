@@ -1,6 +1,8 @@
+@import "../../styles/colors";
+
 .slides {
   max-width: 100%;
-  height: 600px;
+  height: 700px;
   position: relative;
   overflow: hidden;
 }
@@ -10,12 +12,14 @@
   display: flex;
   width: 100%;
   height: 100%;
-  align-items: center;
-  // justify-content: center;
+  align-content: center;
+  justify-items: center;
   transition: transform 1s;
+  flex-wrap: wrap;
 }
 
 .slides__text {
+  z-index: 400;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.527);
   max-width: 20%;
@@ -26,4 +30,61 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.849);
   padding: 10px;
+}
+
+.slides__img {
+  width: 100vw;
+  object-fit: fill;
+  &--active {
+    z-index: 200;
+    top: 0px;
+    position: absolute;
+  }
+  &--previous {
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+  }
+  &--transitioning {
+    animation: 1s ease-out 0s 1 fadeIn;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slides__img--active {
+}
+
+button {
+  z-index: 300;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  background-color: rgba($color: $white, $alpha: 0.3);
+  box-shadow: 0 0 5px 5px rgba($color: $white, $alpha: 0.3);
+  font-size: 8em;
+  color: rgba($color: $black, $alpha: 0.5);
+  align-content: flex-end;
+  top: calc(50% - 0.7em);
+  transition: background-color 0.6s, box-shadow 0.6s, color 0.6s;
+
+  &:hover {
+    background-color: rgba($color: $white, $alpha: 0.6);
+    box-shadow: 0 0 5px 5px rgba($color: $white, $alpha: 0.6);
+    color: rgba($color: $black, $alpha: 0.7);
+  }
+}
+
+.button--left {
+  left: 0;
+}
+
+.button--right {
+  right: 0;
 }
