@@ -1,17 +1,20 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  useMemo,
+} from "react";
 import "./carousel.scss";
 
 const Carousel = ({ images }) => {
   const [activeImage, setActiveImage] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
   const timeoutRef = useRef();
   const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
   };
-  const transitionStyle =
-    isTransitioning === true ? "slides__img--transitioning" : "";
 
   const getPreviousImageIndex = useCallback(
     () => (activeImage === 0 ? images.length - 1 : activeImage - 1),
@@ -28,31 +31,35 @@ const Carousel = ({ images }) => {
   }, [getPreviousImageIndex]);
 
   useEffect(() => {
-    setIsTransitioning(true);
-    setTimeout(() => setIsTransitioning(false), 1000);
-  }, [activeImage]);
-
-  useEffect(() => {
     resetTimeout();
     timeoutRef.current = setTimeout(handleNextSlide, 10000);
     return () => {
       resetTimeout();
     };
   }, [activeImage, handleNextSlide]);
+  const imageComponents = useMemo(
+    () =>
+      images.map((image, index) => {
+        const isActive = index === activeImage;
+        const className = `slides__img ${
+          isActive ? "slides__img--active" : "slides__img--inactive"
+        }`;
+        return (
+          <img
+            src={image.path}
+            alt="helo"
+            className={className}
+            key={image.order}
+          />
+        );
+      }),
+    [activeImage, images]
+  );
 
   return (
     <div className="slides">
       <div className="slide">
-        <img
-          src={images[activeImage].path}
-          alt="helo"
-          className={`slides__img slides__img--active  ${transitionStyle}`}
-        />
-        <img
-          src={images[getPreviousImageIndex()].path}
-          alt="helo"
-          className="slides__img slides__img--previous"
-        />
+        {imageComponents}
         <div className="slides__text">
           <h1>Remont nie musi boleć!</h1>
           Remont - słowo, w który zawiera się ekscytacja, zniecierpliwienie,

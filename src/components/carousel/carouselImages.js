@@ -24,18 +24,6 @@ const image3 = {
   order: 3,
 };
 
-const image4 = {
-  path: "./carousel/006.jpg",
-  alt: "clean2",
-  order: 4,
-};
-
-const image5 = {
-  path: "/carousel/007.jpg",
-  alt: "clean3",
-  order: 5,
-};
-
-const Images = [image1, image2, image3, image4, image5];
+const Images = [image1, image2, image3];
 
 export default Images;

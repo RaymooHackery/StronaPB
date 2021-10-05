@@ -23,6 +23,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.527);
   max-width: 20%;
+  min-width: 235px;
   position: absolute;
   top: 0px;
   right: 8%;
@@ -33,32 +34,25 @@
 }
 
 .slides__img {
-  width: 100vw;
-  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  min-width: 235px;
+  transition: opacity 3s cubic-bezier(0, 0.55, 0.45, 1);
+
   &--active {
+    opacity: 1;
     z-index: 200;
     top: 0px;
     position: absolute;
   }
-  &--previous {
+  &--inactive {
+    opacity: 0;
     z-index: 100;
     position: absolute;
     top: 0px;
   }
-  &--transitioning {
-    animation: 1s ease-out 0s 1 fadeIn;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.slides__img--active {
 }
 
 button {
