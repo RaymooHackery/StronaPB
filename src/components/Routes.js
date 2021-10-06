@@ -1,6 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Address from "./address/Address";
+import MyGallery from "./gallery/MyGallery";
 import Home from "./home/Home";
 import Services from "./services/services";
 
@@ -11,7 +12,7 @@ const Routes = () => {
                 <Services />
             </Route>
             <Route path="/gallery">
-                <Gallery />
+                <MyGallery />
             </Route>
             <Route path="/contact">
                 <Address />
@@ -22,8 +23,5 @@ const Routes = () => {
         </Switch>
     )
 };
-function Gallery() {
-    return <h2>Gallery</h2>;
-}
 
 export default Routes;
