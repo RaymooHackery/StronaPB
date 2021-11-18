@@ -7,7 +7,7 @@
 // }
 
 const image1 = {
-  path: "./carousel/003.jpg",
+  path: "./carousel/027.jpg",
   alt: "mess1",
   order: 1,
 };
@@ -19,7 +19,7 @@ const image2 = {
 };
 
 const image3 = {
-  path: "/carousel/007.jpg",
+  path: "/carousel/009.jpg",
   alt: "mess2",
   order: 3,
 };
