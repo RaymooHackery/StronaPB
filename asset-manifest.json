@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/StronaPB/static/css/main.7f962fa3.chunk.css",
+    "main.js": "/StronaPB/static/js/main.c51b1fee.chunk.js",
+    "main.js.map": "/StronaPB/static/js/main.c51b1fee.chunk.js.map",
+    "runtime-main.js": "/StronaPB/static/js/runtime-main.9a4aa69f.js",
+    "runtime-main.js.map": "/StronaPB/static/js/runtime-main.9a4aa69f.js.map",
+    "static/css/2.3758011c.chunk.css": "/StronaPB/static/css/2.3758011c.chunk.css",
+    "static/js/2.19324925.chunk.js": "/StronaPB/static/js/2.19324925.chunk.js",
+    "static/js/2.19324925.chunk.js.map": "/StronaPB/static/js/2.19324925.chunk.js.map",
+    "index.html": "/StronaPB/index.html",
+    "static/css/2.3758011c.chunk.css.map": "/StronaPB/static/css/2.3758011c.chunk.css.map",
+    "static/css/main.7f962fa3.chunk.css.map": "/StronaPB/static/css/main.7f962fa3.chunk.css.map",
+    "static/js/2.19324925.chunk.js.LICENSE.txt": "/StronaPB/static/js/2.19324925.chunk.js.LICENSE.txt",
+    "static/media/fonts.scss": "/StronaPB/static/media/overpass-v5-latin-ext_latin-regular.354d7312.ttf",
+    "static/media/default-skin.css": "/StronaPB/static/media/default-skin.f64c3af3.svg",
+    "static/media/logo.6fb2bd36.png": "/StronaPB/static/media/logo.6fb2bd36.png",
+    "static/media/logo3.0cb557d0.png": "/StronaPB/static/media/logo3.0cb557d0.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9a4aa69f.js",
+    "static/css/2.3758011c.chunk.css",
+    "static/js/2.19324925.chunk.js",
+    "static/css/main.7f962fa3.chunk.css",
+    "static/js/main.c51b1fee.chunk.js"
+  ]
+}
